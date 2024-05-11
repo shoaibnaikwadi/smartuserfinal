@@ -21,5 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.add_show, name="addandshow"),
     path('delete/<int:id>/', views.delet_data, name="deletedata"),    # THIS IS dynamic url where we are deleting data by getting user id
-    path('<int:id>/', views.update_data, name="updatedata"),    # dynamic url
+    path('<int:id>/', views.update_data, name="updatedata"),    # dynamic url ok
 ]
